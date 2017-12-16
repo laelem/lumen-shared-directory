@@ -24,6 +24,7 @@ $app = new Laravel\Lumen\Application(
 );
 
 $app->configure('auth');
+$app->configure('proxypass');
 
 $app->withFacades();
 
@@ -82,6 +83,7 @@ $app->register(App\Providers\AppServiceProvider::class);
 $app->register(Laravel\Passport\PassportServiceProvider::class);
 $app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
 $app->register(Thedevsaddam\LumenRouteList\LumenRouteListServiceProvider::class);
+$app->register(CSUNMetaLab\LumenProxyPass\Providers\ProxyPassServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

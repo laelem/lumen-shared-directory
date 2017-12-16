@@ -4,8 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca379fe927d733c2bb51e316467342af",
+    "content-hash": "6fb1378944489efd7f5b966f50fc1b41",
     "packages": [
+        {
+            "name": "csun-metalab/lumen-proxypass",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/csun-metalab/lumen-proxypass.git",
+                "reference": "47f4458b0f298d6fd175e4091b684776846698d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/csun-metalab/lumen-proxypass/zipball/47f4458b0f298d6fd175e4091b684776846698d2",
+                "reference": "47f4458b0f298d6fd175e4091b684776846698d2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/LumenProxyPass/"
+                ],
+                "psr-0": {
+                    "CSUNMetaLab\\LumenProxyPass\\": "src/LumenProxyPass/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Fritz",
+                    "email": "mattf@burbankparanormal.com"
+                }
+            ],
+            "description": "Composer package for Lumen that resolves the correct absolute URLs when behind a proxy",
+            "time": "2017-11-08T19:22:35+00:00"
+        },
         {
             "name": "defuse/php-encryption",
             "version": "v2.1.0",
@@ -2355,44 +2394,45 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.3.11",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "fd684d68f83568d8293564b4971928a2c4bdfc5c"
+                "reference": "9f21adfb92a9315b73ae2ed43138988ee4913d4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/fd684d68f83568d8293564b4971928a2c4bdfc5c",
-                "reference": "fd684d68f83568d8293564b4971928a2c4bdfc5c",
+                "url": "https://api.github.com/repos/symfony/console/zipball/9f21adfb92a9315b73ae2ed43138988ee4913d4e",
+                "reference": "9f21adfb92a9315b73ae2ed43138988ee4913d4e",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
-                "symfony/debug": "~2.8|~3.0",
+                "symfony/debug": "~2.8|~3.0|~4.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3"
+                "symfony/dependency-injection": "<3.4",
+                "symfony/process": "<3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~3.3",
-                "symfony/dependency-injection": "~3.3",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/filesystem": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0"
+                "symfony/config": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
+                "symfony/lock": "~3.4|~4.0",
+                "symfony/process": "~3.3|~4.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
-                "symfony/filesystem": "",
+                "symfony/lock": "",
                 "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -2419,20 +2459,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-07T14:16:22+00:00"
+            "time": "2017-12-14T19:40:10+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.11",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "74557880e2846b5c84029faa96b834da37e29810"
+                "reference": "543deab3ffff94402440b326fc94153bae2dfa7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/74557880e2846b5c84029faa96b834da37e29810",
-                "reference": "74557880e2846b5c84029faa96b834da37e29810",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/543deab3ffff94402440b326fc94153bae2dfa7a",
+                "reference": "543deab3ffff94402440b326fc94153bae2dfa7a",
                 "shasum": ""
             },
             "require": {
@@ -2443,12 +2483,12 @@
                 "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
             },
             "require-dev": {
-                "symfony/http-kernel": "~2.8|~3.0"
+                "symfony/http-kernel": "~2.8|~3.0|~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -2475,7 +2515,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-10T16:38:39+00:00"
+            "time": "2017-12-12T08:27:14+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2542,16 +2582,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.3.11",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "138af5ec075d4b1d1bd19de08c38a34bb2d7d880"
+                "reference": "dac8d7db537bac7ad8143eb11360a8c2231f251a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/138af5ec075d4b1d1bd19de08c38a34bb2d7d880",
-                "reference": "138af5ec075d4b1d1bd19de08c38a34bb2d7d880",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/dac8d7db537bac7ad8143eb11360a8c2231f251a",
+                "reference": "dac8d7db537bac7ad8143eb11360a8c2231f251a",
                 "shasum": ""
             },
             "require": {
@@ -2560,7 +2600,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -2587,7 +2627,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-05T15:47:03+00:00"
+            "time": "2017-11-05T16:10:10+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -2898,16 +2938,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v3.3.11",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "373e553477e55cd08f8b86b74db766c75b987fdb"
+                "reference": "4c5d5582baf2829751a5207659329c1f52eedeb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/373e553477e55cd08f8b86b74db766c75b987fdb",
-                "reference": "373e553477e55cd08f8b86b74db766c75b987fdb",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/4c5d5582baf2829751a5207659329c1f52eedeb6",
+                "reference": "4c5d5582baf2829751a5207659329c1f52eedeb6",
                 "shasum": ""
             },
             "require": {
@@ -2916,13 +2956,16 @@
             },
             "conflict": {
                 "symfony/config": "<2.8",
-                "symfony/yaml": "<3.3"
+                "symfony/dependency-injection": "<3.4",
+                "symfony/yaml": "<3.4"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.8|~3.0",
-                "symfony/intl": "^2.8.18|^3.2.5",
-                "symfony/yaml": "~3.3"
+                "symfony/config": "~2.8|~3.0|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/finder": "~2.8|~3.0|~4.0",
+                "symfony/intl": "^2.8.18|^3.2.5|~4.0",
+                "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {
                 "psr/log": "To use logging capability in translator",
@@ -2932,7 +2975,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -2959,7 +3002,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-07T14:12:55+00:00"
+            "time": "2017-12-12T08:27:14+00:00"
         },
         {
             "name": "thedevsaddam/lumen-route-list",

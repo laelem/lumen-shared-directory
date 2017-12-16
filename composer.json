@@ -9,7 +9,8 @@
         "laravel/lumen-framework": "5.5.*",
         "vlucas/phpdotenv": "~2.2",
         "dusterio/lumen-passport": "^0.2.4",
-        "thedevsaddam/lumen-route-list": "^2.0"
+        "thedevsaddam/lumen-route-list": "^2.0",
+        "csun-metalab/lumen-proxypass": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
