@@ -10,7 +10,7 @@
         "vlucas/phpdotenv": "~2.2",
         "dusterio/lumen-passport": "^0.2.4",
         "thedevsaddam/lumen-route-list": "^2.0",
-        "csun-metalab/lumen-proxypass": "^1.1"
+        "fideloper/proxy": "^3.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

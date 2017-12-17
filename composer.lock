@@ -4,47 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fb1378944489efd7f5b966f50fc1b41",
+    "content-hash": "0cf6c65815fc68ef450d8bf09528ffc9",
     "packages": [
-        {
-            "name": "csun-metalab/lumen-proxypass",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/csun-metalab/lumen-proxypass.git",
-                "reference": "47f4458b0f298d6fd175e4091b684776846698d2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/csun-metalab/lumen-proxypass/zipball/47f4458b0f298d6fd175e4091b684776846698d2",
-                "reference": "47f4458b0f298d6fd175e4091b684776846698d2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/LumenProxyPass/"
-                ],
-                "psr-0": {
-                    "CSUNMetaLab\\LumenProxyPass\\": "src/LumenProxyPass/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Matthew Fritz",
-                    "email": "mattf@burbankparanormal.com"
-                }
-            ],
-            "description": "Composer package for Lumen that resolves the correct absolute URLs when behind a proxy",
-            "time": "2017-11-08T19:22:35+00:00"
-        },
         {
             "name": "defuse/php-encryption",
             "version": "v2.1.0",
@@ -225,6 +186,63 @@
                 "php"
             ],
             "time": "2017-10-27T04:18:05+00:00"
+        },
+        {
+            "name": "fideloper/proxy",
+            "version": "3.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fideloper/TrustedProxy.git",
+                "reference": "9cdf6f118af58d89764249bbcc7bb260c132924f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/9cdf6f118af58d89764249bbcc7bb260c132924f",
+                "reference": "9cdf6f118af58d89764249bbcc7bb260c132924f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/http": "~5.0",
+                "mockery/mockery": "~0.9.3",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Fideloper\\Proxy\\TrustedProxyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fideloper\\Proxy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Fidao",
+                    "email": "fideloper@gmail.com"
+                }
+            ],
+            "description": "Set trusted proxies for Laravel",
+            "keywords": [
+                "load balancing",
+                "proxy",
+                "trusted proxy"
+            ],
+            "time": "2017-06-15T17:19:42+00:00"
         },
         {
             "name": "firebase/php-jwt",
