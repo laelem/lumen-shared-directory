@@ -24,7 +24,6 @@ $app = new Laravel\Lumen\Application(
 );
 
 $app->configure('auth');
-$app->configure('trustedproxy');
 
 $app->withFacades();
 
@@ -63,7 +62,7 @@ $app->singleton(
 */
 
 $app->middleware([
-   'Fideloper\Proxy\TrustProxies'
+    \Fideloper\Proxy\TrustProxies::class
 ]);
 
 $app->routeMiddleware([
